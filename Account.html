@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+            <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="Image/cart.png" width="65px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Grocery.html">Groceries</a></li>
+                <li><a href="#down">About</a></li>
+                <li><a href="#down">Contact</a></li>
+                <li><a href="Account.html">Account</a></li>
+            </ul>
+        </nav>
+                <a href="cart.html"><img src="Image/bag-removebg-preview.png" width="30px" height="30px"></a>
+    </div>
+    </div>
+</div>
+
+<!---------------Account Page ---------------->
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="Image/Groc.png" width="1000%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator"> 
+                    </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Username">
+                        <input type="text" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Register</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!---------------Footer ---------------->
+
+    <div class="footer">
+        <div class="container">
+            <div id="down"></div>
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <img src="Image/google_appstore3.jpg">                   
+                 </div>
+                 <div class="footer-col-4">
+                    <h3>The Grocery Store</h3>     
+                    <img src="Image/cart.png" alt="">    
+                 </div>
+                 <div class="footer-col-2">
+                    <h3>Contact Us</h3>
+                    <ul style="list-style-type:none;">
+                        <li>thegrocerystore@mitaoe.ac.in</li>
+                        <li>Ph: 987321864</li>
+                    </ul>                    
+                 </div>
+                 <div class="footer-col-3">
+                    <h3>Social Media</h3>
+                    <ul style="list-style-type:none;">
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Reddit</li>
+                    </ul>                    
+                 </div>
+                 <div class="footer-col-5">
+                    <h3>About Us</h3>
+                    <ul style="list-style-type:none;">
+                        <li>TheOnlineGrocery makes online grocery delivery and grocery shopping fast and easy. 
+                            Order the best of seasonal farm fresh food, great local finds, quick meal solutions, 
+                            incredible new products and exclusives, and all of your favorite grocery brands. 
+                            It's supermarket delivery with so much more: from Fresh Deals that help you save big to convenient delivery windows that work around your schedule, 
+                            we've thought of everything to make grocery home delivery simple for you. 
+                            We're a grocery delivery service you can trust as we source only the highest-quality products and deliver them directly to your door.</li>
+                    </ul>                    
+                 </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - The Online Grocery Store</p>
+        </div>
+    </div>
+
+<!-----------JS for toggle form------->
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(100px)";
+    }
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+
+</script>
+
+</body>
+</html>
+
+
+
